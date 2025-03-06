@@ -1,0 +1,56 @@
+/* Importation de la police Western */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* Styles généraux */
+body {
+    font-family: 'Special Elite', cursive;
+    background: #8F422A;
+    color: #4E2A14;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Conteneur de l'énigme */
+.container {
+    background: #F4E1C1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border: 10px solid #8B4513;
+    max-width: 500px;
+    width: 90%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Champ de texte de la réponse */
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    background-color: #FAE0C3;
+    color: #4E2A14;
+    text-align: center;
+}
+
+/* Bouton de validation */
+button {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A0522D;
+}
