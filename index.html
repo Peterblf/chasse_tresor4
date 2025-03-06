@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étape 4 - Banc devant le Student Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Étape 4 : Banc devant le Student Hub</h1>
+        <p>Répondez correctement à la question suivante pour découvrir l'emplacement du coffre au trésor :</p>
+        <p><strong>En quelle année la première bande dessinée de Lucky Luke a-t-elle été publiée ?</strong></p>
+        
+        <input type="text" id="reponse" placeholder="Entrez votre réponse">
+        <button id="valider">Valider</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        document.getElementById("valider").addEventListener("click", function() {
+            let reponse = document.getElementById("reponse").value.trim();
+            let message = document.getElementById("message");
+
+            if (reponse === "1946") {
+                message.innerHTML = "<p><strong>Bonne réponse !</strong></p><p>Le coffre au trésor se trouve <strong>près du vieux chêne derrière le bâtiment principal</strong>.</p>";
+                message.style.color = "green";
+            } else {
+                message.innerHTML = "<p>Mauvaise réponse, essayez encore !</p>";
+                message.style.color = "red";
+            }
+        });
+    </script>
+</body>
+</html>
